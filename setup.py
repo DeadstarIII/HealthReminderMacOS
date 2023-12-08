@@ -1,10 +1,12 @@
 from setuptools import setup
 
-APP = ['main.py']
-DATA_FILES = []
+APP = ['Health.py']
+DATA_FILES = [('./assets', ['./assets/icon.png'])]
 OPTIONS = {
-    'packages': ['tkinter', 'schedule', 'playsound'],
-    'includes': ['threading'],
+    'packages': ['rumps', 'schedule'],
+    'plist': {
+        'LSUIElement': 1, 
+    },
 }
 
 setup(
